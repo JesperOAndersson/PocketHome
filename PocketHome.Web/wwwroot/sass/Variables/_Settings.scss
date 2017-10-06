@@ -1,0 +1,70 @@
+﻿$row-max-width: 1240px;    				
+$min-device-width: 320px; 						// iPhone Portrait
+$tablet-device-width: 768px;    			    // Ipad Portrait
+$document-width: $row-max-width;				// Default Document
+$max-device-width: 1280px;						// Max Document Size
+
+$heading-font: EverAfter;
+$logo-font: 'Lobster', cursive;
+$body-font: 'Arimo', sans-serif;
+
+
+
+@font-face {
+    font-family: 'Everafter';
+    src: url('../../fonts/everafte.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
+// Colors
+$ColorDarkestGreen: #263528;
+$ColorDarkGreen: #5D7D59;
+$ColorOliveGreen: #9AB999;
+$ColorDarkestYellow: #DCAE00;
+$ColorDarkYellow: #FFD32C;
+$ColorYellow: #FFE47C;
+$ColorDarkestOrange: #C35A0C;
+$ColorDarkOrange: #FB832A;
+$ColorOrange: #FFB47C;
+$ColorDarkestGrey: #373738;
+$ColorDarkGrey: #717171;
+$ColorGrey: #D8D8D8;
+
+.darkest-green{
+    background-color: $ColorDarkestGreen;
+}
+.dark-green{
+    background-color: $ColorDarkGreen;
+}
+.green{
+    background-color: $ColorOliveGreen;
+}
+.darkest-yellow{
+    background-color: $ColorDarkestYellow;
+}
+.dark-yellow{
+    background-color: $ColorDarkYellow;
+}
+.bright-yellow{
+    background-color: $ColorYellow;
+}
+.darkest-orange{
+    background-color: $ColorDarkestOrange;
+}
+.dark-orange{
+    background-color: $ColorDarkOrange;
+}
+.dull-orange{
+    background-color: $ColorOrange;
+}
+.darkest-grey{
+    background-color: $ColorDarkestGrey;
+}
+.dark-grey{
+    background-color: $ColorDarkGrey;
+}
+.grey{
+    background-color: $ColorGrey;
+}

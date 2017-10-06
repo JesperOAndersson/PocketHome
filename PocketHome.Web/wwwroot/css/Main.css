@@ -1,0 +1,259 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+@font-face {
+  font-family: 'Everafter';
+  src: url("../../fonts/everafte.ttf") format("truetype"); }
+
+.darkest-green {
+  background-color: #263528; }
+
+.dark-green {
+  background-color: #5D7D59; }
+
+.green {
+  background-color: #9AB999; }
+
+.darkest-yellow {
+  background-color: #DCAE00; }
+
+.dark-yellow {
+  background-color: #FFD32C; }
+
+.bright-yellow {
+  background-color: #FFE47C; }
+
+.darkest-orange {
+  background-color: #C35A0C; }
+
+.dark-orange {
+  background-color: #FB832A; }
+
+.dull-orange {
+  background-color: #FFB47C; }
+
+.darkest-grey {
+  background-color: #373738; }
+
+.dark-grey {
+  background-color: #717171; }
+
+.grey {
+  background-color: #D8D8D8; }
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 40px; }
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h3 {
+  font-size: 38px; }
+
+h4 {
+  font-size: 36px; }
+
+h5 {
+  font-size: 30px; }
+
+h6 {
+  font-size: 26px; }
+
+body {
+  color: White;
+  background: black;
+  font-family: "Arimo", sans-serif; }
+
+h1, h2, h3 {
+  font-family: EverAfter; }
+
+.background {
+  position: absolute;
+  width: calc(100% + 40px);
+  overflow: hidden;
+  z-index: -999;
+  margin-left: -40px;
+  margin-top: -40px;
+  background-repeat: repeat-x; }
+  .background img {
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+    transform: scale(1.03); }
+
+.content-bg {
+  background: rgba(10, 10, 10, 0.6);
+  border-radius: 5px;
+  padding: 20px; }
+
+.container {
+  margin-left: 20%; }
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+  max-width: 280px; }
+
+/* Carousel */
+.carousel-caption p {
+  font-size: 20px;
+  line-height: 1.4; }
+
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+  display: inline-block;
+  content: "[";
+  padding-right: 0.5em; }
+
+.btn-bracketed::after {
+  display: inline-block;
+  content: "]";
+  padding-left: 0.5em; }
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+  width: 100%; }
+
+/* Hide/rearrange for smaller screens */
+@media only screen and (max-width: 767px) {
+  /* Hide captions */
+  .carousel-caption {
+    display: none; } }
+
+.navbar {
+  border: none;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  z-index: 999;
+  width: 20%;
+  max-width: 250px;
+  background: rgba(10, 10, 10, 0.4);
+  padding: 20px;
+  color: white;
+  font-family: EverAfter; }
+  .navbar .navbar-header {
+    text-align: center;
+    margin-top: 20px; }
+    .navbar .navbar-header .navbar-brand {
+      padding: 0;
+      float: none;
+      font-size: 40px;
+      color: White;
+      font-family: "Lobster", cursive; }
+      .navbar .navbar-header .navbar-brand:hover {
+        text-decoration: none;
+        color: White; }
+  .navbar .navbar-collapse {
+    height: 80%;
+    margin-top: 40px; }
+    .navbar .navbar-collapse .nav li a {
+      color: white;
+      transition: 0.2s;
+      font-size: 22px; }
+      .navbar .navbar-collapse .nav li a:hover {
+        margin-left: 5px;
+        text-decoration: none; }
+  .navbar .navbar-login {
+    position: relative;
+    bottom: 0; }
+
+.navbar-fixed-top {
+  position: static !important; }
+
+.button-outline {
+  padding: 5px;
+  border-radius: 20px;
+  background: #c6c2c2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c6c2c2 0%, #757474 0%, #545353 40%, #2b2b2a 86%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c6c2c2 0%, #757474 0%, #545353 40%, #2b2b2a 86%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c6c2c2 0%, #757474 0%, #545353 40%, #2b2b2a 86%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c2c2', endColorstr='#2b2b2a',GradientType=0 );
+  width: 90px; }
+  .button-outline.button-on {
+    box-shadow: 0px 0px 2px 1px black, 0px 0px 20px 0px rgba(251, 131, 42, 0.4); }
+    .button-outline.button-on .button {
+      box-shadow: inset 0px 0px 3px 2.5px rgba(0, 0, 0, 0.75), 0px 0px 20px 0px rgba(251, 131, 42, 0.4);
+      background: #fc508c;
+      /* Old browsers */
+      background: linear-gradient(to bottom, #FFB47C 1%, #FB832A 100%); }
+      .button-outline.button-on .button p {
+        content: 'On'; }
+  .button-outline.button-off {
+    box-shadow: 0px 0px 2px 1px black; }
+    .button-outline.button-off .button p {
+      content: 'Off';
+      left: 10%; }
+    .button-outline.button-off .button .slider {
+      left: 50px; }
+  .button-outline .button {
+    background: #bcbcbc;
+    background: linear-gradient(to bottom, #9a9899 0%, #666668 34%, #666668 86%, #9a9899 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a9899', endColorstr='#9a9899',GradientType=0 );
+    width: 80px;
+    height: 30px;
+    transition: background 0.5s ease;
+    box-shadow: inset 0px 0px 3px 2.5px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    position: relative; }
+    .button-outline .button p {
+      font-size: 18px;
+      font-weight: 700;
+      color: black;
+      position: absolute;
+      top: 15%;
+      left: 50%; }
+    .button-outline .button .slider {
+      transition: 0.1s;
+      left: 0px;
+      background: linear-gradient(to bottom, #757575 0%, #424242 100%);
+      box-shadow: 0px 0px 3px 1px black, inset 0px 0px 3px 1px rgba(255, 255, 255, 0.15);
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      position: relative; }
+    .button-outline .button .slider:after {
+      content: " ";
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      box-shadow: 2px 3px 24px 1px rgba(0, 0, 0, 0.5); }
+
+.lightswitch {
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .lightswitch h6 {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center; }
+  .lightswitch .switch-icon {
+    font-size: 40px;
+    text-align: left;
+    margin: 0px 10px; }
+  .lightswitch .button-outline {
+    display: inline-block; }
+
+.device-list {
+  color: white; }
+  .device-list ul a {
+    color: white; }
+  .device-list .device {
+    list-style: none;
+    margin-bottom: 10px; }
+
+.form-horizontal .control-label {
+  text-align: initial;
+  padding: 0 10px;
+  margin: 0; }
+
+.form-horizontal .form-group {
+  margin: 0; }
+

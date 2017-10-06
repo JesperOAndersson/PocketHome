@@ -1,0 +1,72 @@
+﻿body{
+    color:White;
+    background:black;
+    font-family: $body-font;
+}
+
+h1,h2,h3{
+    font-family:$heading-font;
+}
+
+.background{
+    position:absolute;
+    width:calc(100% + 40px);
+    overflow: hidden;
+    z-index:-999;
+    margin-left:-40px;
+    margin-top:-40px;
+    background-repeat: repeat-x; 
+    img{
+        filter: blur(40px);
+        -webkit-filter: blur(40px);
+        transform: scale(1.03);
+    }
+}
+
+.content-bg{
+    background: rgba(10, 10, 10, 0.6);
+    border-radius:5px;
+    padding:20px;
+}
+
+.container{
+    margin-left:20%;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+    display:inline-block;
+    content: "[";
+    padding-right: 0.5em;
+}
+.btn-bracketed::after {
+    display:inline-block;
+    content: "]";
+    padding-left: 0.5em;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"]
+{
+    width: 100%;
+}
+/* Hide/rearrange for smaller screens */
+@include respond(all-phones) {
+  /* Hide captions */
+  .carousel-caption {
+    display: none
+  }
+}

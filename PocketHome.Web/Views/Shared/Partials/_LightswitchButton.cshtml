@@ -1,0 +1,10 @@
+﻿@model Device
+@{
+	var button = Model.Status == 1 ? "button-on" : "button-off";
+}
+<div class="button-outline @button" id="js-lightswitch" data-device="@Model.Id">
+	<div class="button">
+		<p>On</p>
+		<div class="slider"></div>
+	</div>
+</div>

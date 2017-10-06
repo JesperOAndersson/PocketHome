@@ -1,0 +1,80 @@
+﻿.button-outline{
+    padding:5px;
+    border-radius:20px;
+    background: #c6c2c2; /* Old browsers */
+    background: -moz-linear-gradient(top, #c6c2c2 0%, #757474 0%, #545353 40%, #2b2b2a 86%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #c6c2c2 0%,#757474 0%,#545353 40%,#2b2b2a 86%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #c6c2c2 0%,#757474 0%,#545353 40%,#2b2b2a 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c2c2', endColorstr='#2b2b2a',GradientType=0 );
+    &.button-on{
+            
+        box-shadow: 0px 0px 2px 1px rgba(0,0,0,1), 0px 0px 20px 0px rgba(251, 131, 42, 0.4);
+        .button{
+            box-shadow:inset 0px 0px 3px 2.5px rgba(0,0,0,0.75), 0px 0px 20px 0px rgba(251, 131, 42, 0.4);
+            background: #fc508c; /* Old browsers */
+            background: linear-gradient(to bottom, $ColorOrange 1%,$ColorDarkOrange 100%);
+            p{
+                content:'On';
+            }
+            .slider{
+            
+            }
+        }
+    }
+    &.button-off{
+        box-shadow: 0px 0px 2px 1px rgba(0,0,0,1);
+        .button{
+            p{
+                content:'Off';
+                left:10%;
+            }
+            .slider{
+                left:50px;
+            }
+        }
+    }
+    width:90px;
+    .button{
+        background: #bcbcbc;
+        background: linear-gradient(to bottom, #9a9899 0%,#666668 34%,#666668 86%,#9a9899 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a9899', endColorstr='#9a9899',GradientType=0 );
+        width:80px;
+        height:30px;
+        transition:background 0.5s ease;
+        box-shadow: inset 0px 0px 3px 2.5px rgba(0,0,0,0.75);
+        border-radius:30px;
+        position:relative;
+        p{
+            font-size:18px;
+            font-weight:700;
+            color:black;
+            position:absolute;
+            top:15%;
+            left:50%;
+        }
+        .slider{
+            transition:0.1s;
+            left:0px;
+            background: linear-gradient(to bottom, #757575 0%,#424242 100%);
+            box-shadow:  0px 0px 3px 1px rgba(0,0,0,1), inset 0px 0px 3px 1px rgba(256,256,256,0.15);
+            width:30px;
+            height:30px;
+            border-radius:30px;
+            position:relative;
+                
+        }
+        .slider:after{ 
+                content:" ";
+                display:block;
+                width:30px;
+                height:30px;
+                border-radius:30px;
+                box-shadow: 2px 3px 24px 1px rgba(0,0,0,0.5);
+            }
+    }
+        
+}
+
+.new{
+
+}

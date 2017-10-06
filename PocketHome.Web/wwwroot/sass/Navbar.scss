@@ -1,0 +1,55 @@
+﻿.navbar{
+    border:none;
+    position:fixed;
+    border-radius:0;
+    height:100%;
+    z-index:999;
+    width:20%;
+    max-width:250px;
+    background: rgba(10, 10, 10, 0.4);
+    padding:20px;
+    color:white;
+    font-family:$heading-font;
+    .navbar-header{
+        text-align:center;
+        margin-top:20px;
+        .navbar-brand{
+            padding:0;
+            float:none;
+            font-size:40px;
+            color:White;
+            font-family:$logo-font;
+            &:hover{
+                text-decoration:none;
+                color:White;
+            }
+        }
+
+    }
+    
+    .navbar-collapse{
+        height:80%;
+        margin-top:40px;
+        .nav{
+            li{
+                a{
+                    color:white;
+                    transition:0.2s;
+                    font-size:22px;
+                    &:hover{
+                        margin-left:5px;
+                        text-decoration:none;
+                    }
+                }
+                
+            }
+        }
+    }
+    .navbar-login{
+        position: relative;
+        bottom:0;
+    }
+}
+.navbar-fixed-top{
+        position:static !important;
+    }

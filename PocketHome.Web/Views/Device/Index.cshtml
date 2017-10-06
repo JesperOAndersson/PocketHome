@@ -1,0 +1,23 @@
+﻿
+
+
+
+@{
+    ViewData["Title"] = "Device Page";
+}
+<div class="body-content">
+	<h1>Devices</h1>
+	<ul>
+
+		@foreach (var device in Model.devices)
+		{
+			
+		    <li class="device">
+		        <a asp-action="Device" asp-controller="Device" asp-route-id="@device.Id">
+		            @device.Name
+		        </a>
+		    </li>
+			
+		}
+	</ul>
+</div>

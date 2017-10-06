@@ -1,0 +1,34 @@
+﻿namespace PocketHome.Core.Models
+{
+    public enum CategoryEnum
+    {
+		Interface,
+		DimmableLight,
+		Switch,
+		SecuritySensor,
+		HVAC,
+		Camera,
+		DoorLock,
+		WindowCovering,
+		RemoteControl,
+		IRTransmitter,
+		GenericIO,
+		GenericSensor,
+		SerialPort,
+		SceneController,
+		AV,
+		HumiditySensor,
+		TemperatureSensor,
+		LightSensor,
+		ZWaveInterface,
+		InsteonInterface,
+		PowerMeter,
+		AlarmPanel,
+		AlarmPartition,
+		Siren,
+		Weather,
+		PhilipsController,
+		Appliance,
+		UVSensor
+	}
+}

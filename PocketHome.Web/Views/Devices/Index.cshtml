@@ -1,0 +1,43 @@
+﻿@using NUglify.Helpers
+@model VeraAnswer
+
+
+	
+@{
+    ViewData["Title"] = "Devices";
+}
+<div class="body-content">
+	<h1>Devices</h1>
+	<div class="device-list">
+		<ul class="row">
+
+			@foreach (var device in Model.devices)
+			{
+				var category = (CategoryEnum) device.Category.Value - 1;
+				if (category == CategoryEnum.Interface || category == CategoryEnum.AV)
+				{
+					continue;
+				}
+				<li class="device col-xs-12 col-md-5 col-lg-3 content-bg">
+					<a href="@Url.Action("Index", "Device", new {id = device.Id})">
+						<h6>Name: @device.Name</h6>
+					</a>
+						@if (device.Category != null && category == CategoryEnum.Switch)
+						{
+							<p class="device-type">Type: Light switch</p>
+							Html.RenderPartial("Partials/_LightswitchButton", device);
+						}
+						else
+						{
+							<p class="device-type">Type: @((CategoryEnum)device.Category.Value)</p>
+						}
+						@if (!device.Watts.IsNullOrWhiteSpace()){<p class="device-wattage">Wattage: @device.Watts</p>}
+						@if (!device.Light.IsNullOrWhiteSpace()){<p class="device-light">Light: @device.Light lumen</p>}
+						@if (!device.BatteryLevel.IsNullOrWhiteSpace()){<p class="device-battery">Battery: @device.BatteryLevel%</p>}
+						@if (!device.Temperature.IsNullOrWhiteSpace()){<p class="device-temperature">Temperature: @device.Temperature C</p>}
+				</li>
+				
+			}
+		</ul>
+	</div>
+</div>

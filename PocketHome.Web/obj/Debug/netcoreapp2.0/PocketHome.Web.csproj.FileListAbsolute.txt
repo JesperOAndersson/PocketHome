@@ -1,0 +1,13 @@
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Core.dll
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.csprojResolveAssemblyReference.cache
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.csproj.CoreCompileInputs.cache
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.AssemblyInfoInputs.cache
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.AssemblyInfo.cs
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Web.deps.json
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Web.runtimeconfig.json
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Web.runtimeconfig.dev.json
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Web.dll
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Web.pdb
+C:\Projekt\PocketHome\PocketHome.Web\bin\Debug\netcoreapp2.0\PocketHome.Core.pdb
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.dll
+C:\Projekt\PocketHome\PocketHome.Web\obj\Debug\netcoreapp2.0\PocketHome.Web.pdb
